@@ -20,4 +20,13 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Person{");
+        sb.append("age=").append(age);
+        sb.append(", name='").append(name).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }

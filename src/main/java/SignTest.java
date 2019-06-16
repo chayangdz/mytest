@@ -1,5 +1,5 @@
-import com.daojia.open.platform.common.security.utils.MD5;
-import org.apache.commons.lang3.StringUtils;
+//import com.daojia.open.platform.common.security.utils.MD5;
+//import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
 
@@ -32,9 +32,10 @@ public class SignTest {
 
         String sortParam = getSortParam(sortMap);
 
-        String sign = StringUtils.upperCase(MD5.encode(serviceSecret + sortParam + serviceSecret));
+//        String sign = StringUtils.upperCase(MD5.encode(serviceSecret + sortParam + serviceSecret));
 
-        return sign;
+//        return sign;
+        return "";
     }
 
     // 参数排序

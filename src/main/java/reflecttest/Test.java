@@ -2,7 +2,7 @@ package reflecttest;
 
 
 
-import org.apache.commons.beanutils.BeanUtils;
+//import org.apache.commons.beanutils.BeanUtils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

@@ -11,11 +11,11 @@ public class Test {
         staticHelloProxy.say();
 
         Hello hello = new HelloImpl();
-        DynamicProxy dynamicProxy = new DynamicProxy(hello);
+        TargetMethodHandler targetMethodHandler = new TargetMethodHandler(hello);
         Hello helloDynamicProxy = (Hello) Proxy.newProxyInstance(
                 hello.getClass().getClassLoader(),
                 hello.getClass().getInterfaces(),
-                dynamicProxy
+                targetMethodHandler
         );
         helloDynamicProxy.say();
     }

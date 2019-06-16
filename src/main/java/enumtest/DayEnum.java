@@ -35,4 +35,27 @@ public enum DayEnum {
      * 在第一次使用枚举中的元素时，就会看到构造方法里的"constructor"打印七次
      * 枚举的构造方法，必须是私有的
      */
+
+    public static void main(String[] args) {
+        String s = "hhh";
+
+        DayEnum dayEnum1 = DayEnum.MON;
+
+        System.out.println(dayEnum1);
+        dayEnum1.name();
+        String desc = dayEnum1.getDesc();
+        System.out.println(desc);
+        int code = dayEnum1.getCode();
+        System.out.println(code);
+
+
+        Day day1 = new Day();
+        Day day2 = new Day();
+        System.out.println(day1 == day2);
+
+        DayEnum dayEnum2 = DayEnum.MON;
+
+        System.out.println(dayEnum1 == dayEnum2);
+    }
+
 }

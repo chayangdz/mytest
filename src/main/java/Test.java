@@ -30,6 +30,27 @@ public class Test {
         Map<String, String > map = new HashMap<String, String>();
         map.put("aa", "a");
 
+        Person p = (Person) null;
+
+
+        String s = "ADVsda_dwe123";
+        System.out.println(s.toLowerCase());
+
+        Set<String> set = new HashSet<String>();
+        set.add("abc");
+        set.add("add");
+        set.add("asd");
+        set.add("add");
+
+        System.out.println(set.toString());
+
+        List<String> list1 = new ArrayList<String>();
+        list1.add("acb");
+        list1.add("sd");
+        list1.add("acsdab");
+        list1.add("ds");
+        String ada = list1.toString();
+        System.out.println(ada);
 
     }
     public static String decrypt(byte[] src, String password) throws Exception {

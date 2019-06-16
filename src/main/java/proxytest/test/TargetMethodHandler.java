@@ -6,14 +6,14 @@ import java.lang.reflect.Method;
 /**
  * Created by chayang on 2017/11/28.
  */
-public class DynamicProxy implements InvocationHandler {
+public class TargetMethodHandler implements InvocationHandler {
 
     /**
      * 被代理的目标类
      */
     private Object target;
 
-    public DynamicProxy(Object target) {
+    public TargetMethodHandler(Object target) {
         this.target = target;
     }
 
