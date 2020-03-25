@@ -30,5 +30,18 @@ public class AutoBox {
         Integer i7 = Integer.valueOf(1);
         Integer i8 = Integer.valueOf(1);
         System.out.println("i7==i8?" + (i7 == i8));
+
+
+        Integer a = 1;
+        Integer b = 2;
+        Integer c = 3;
+        Long g = 3L;
+
+        System.out.println(c == (a + b));
+        System.out.println(c.equals(a + b));
+
+        System.out.println(g == (a + b));
+        System.out.println(g.equals(a + b));
+
     }
 }

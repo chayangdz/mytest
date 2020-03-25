@@ -2,10 +2,18 @@ package sortingalgorithmtest;
 
 /**
  * Created by chayang on 2017/9/13.
+ * 归并排序
  */
 public class MergeSort {
     /**
+     * 归并排序用的是分治思想，核心流程为：
+     * 如果要排序一个数组，我们先把数组从中间分成前后两部分，然后对前后两部分分别排序。
+     * 再将排好序的两部分合并在一起，这样整个数组就都有序了。
+     *
+     *
      * 合并的时候，先把数组中的内容复制出去，然后再一次比较两个新数组，插入原来的数组
+     *
+     * 归并排序是稳定的排序算法，时间复杂度O(n*log n)，空间复杂度O(n)
      */
     private static void merge(int[] a, int low, int middle, int high) {
 

@@ -8,6 +8,8 @@ public class QuickSort {
      * 快速排序，采用分而治之的思想
      * 取头元素为参照，第一次排序后，分成两部分，前面的都比参照数小，后面的都比参照数大
      * 以此类推，对参照数前后的两部分继续进行快速排序
+     *
+     * 快排的时间复杂度是 O(n*log n)
      */
 
     private static void quickSort(int[] a) {

@@ -17,21 +17,29 @@ public class MyTest {
             System.out.println(s.toString());
         }
 
-        Method[] methods = MyTest.class.getMethods();
-        for (Method method : methods) {
-            if (method.getName().equals("change") ) {
-                Type[] types = method.getGenericParameterTypes();
+        try {
+            Method[] methods = MyTest.class.getMethods();
+            for (Method method : methods) {
+                if (method.getName().equals("change") ) {
+                    Type[] types = method.getGenericParameterTypes();
 
-//                Class clazz = (Class) types[0];
+    //                Class clazz = (Class) types[0];
 
-                if (types[0] instanceof ParameterizedType) {
-                    Type trueType =  ((ParameterizedType)types[0]).getActualTypeArguments()[0];
-                    System.out.println(trueType);
+                    try {
+                        if (types[0] instanceof ParameterizedType) {
+                            Type trueType =  ((ParameterizedType)types[0]).getActualTypeArguments()[0];
+                            System.out.println(trueType);
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                    System.out.println(types[0]);
                 }
 
-                System.out.println(types[0]);
             }
-
+        } catch (SecurityException e) {
+            e.printStackTrace();
         }
     }
 

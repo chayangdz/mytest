@@ -4,6 +4,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -38,10 +39,45 @@ public class Test {
         System.out.println(parameterizedType);
         System.out.println(parameterizedType.getRawType());
         System.out.println(parameterizedType.getActualTypeArguments()[0]);
+
+
+        List<String> list1 = new ArrayList<String>();
+        list1.add("A");
+
+        String s = testT(list1);
+
+        List<Integer> list2 = new ArrayList<Integer>();
+        list2.add(1);
+        Integer integer = testT(list2);
+
+
+        List list3 = new ArrayList<String>();
+        list3.add("abc");
+        Object s3 = testT(list3);
+
+        System.out.println(s);
+        System.out.println(integer);
+
     }
+
+
+    public static <T> T testT(List<T> list) {
+        return list.get(0);
+    }
+
 
     public static void test(List<Integer> list) {
     }
+
+
+
+
+
+
+
+
+
+
 
 //    public static void test(List<String> list) {
 //    }

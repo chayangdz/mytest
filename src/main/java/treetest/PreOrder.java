@@ -26,7 +26,7 @@ public class PreOrder {
         if (root == null) {
             return;
         }
-        Stack<Node> stack = new Stack<Node>();
+        Stack<Node> stack = new Stack<>();
         Node node = root;
         while (!stack.isEmpty() || node != null) {//需要判断node是否为空，不然就会在根节点右子树那里断掉。
             if (node != null) {
@@ -51,7 +51,7 @@ public class PreOrder {
      * 然后将头结点压入栈中
      * 每次从栈中弹出栈顶元素，记为node，然后打印node节点的值。
      * 如果node右孩子不为空的话，将node的右孩子压入栈中
-     * 如果node左孩子不为空的话，将node的做孩子压入栈中
+     * 如果node左孩子不为空的话，将node的左孩子压入栈中
      * 不断重复上面的步骤，直到栈为空
      */
     private static void preOrder2(Node root) {
