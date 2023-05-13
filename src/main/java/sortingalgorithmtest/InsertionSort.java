@@ -15,7 +15,7 @@ public class InsertionSort {
 
 
     private static void insertionSort(int[] a) {
-        if (a.length <= 1) {
+        if (a == null || a.length <= 1) {
             return;
         }
         for (int i = 1; i < a.length; i++) {

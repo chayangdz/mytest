@@ -14,7 +14,7 @@ public class SelectionSort {
 
 
     private static void selectionSort(int[] a) {
-        if (a.length <= 1) {
+        if (a == null || a.length <= 1) {
             return;
         }
         int position;//position记录最小值的位置
