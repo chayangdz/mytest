@@ -15,6 +15,11 @@ import java.util.List;
 public class Test {
     public static void main(String[] args) throws Exception {
         Point p1 = new Point(3, 5);
+
+        Class clazz = p1.getClass();
+
+        Object o = clazz.newInstance();
+
         new Point(3,5);
         Field field1 = p1.getClass().getField("y");
         System.out.println(field1.get(p1));

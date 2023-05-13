@@ -16,7 +16,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
     </properties>
 
     <!-- spring boot实现Java Web服务-->
@@ -49,6 +49,11 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.25</version>
+        </dependency>
+        <dependency>
+            <groupId>kuaishou</groupId>
+            <artifactId>infra-framework-common</artifactId>
+            <version>1.0.465</version>
         </dependency>
     </dependencies>
 

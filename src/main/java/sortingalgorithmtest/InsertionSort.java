@@ -30,6 +30,8 @@ public class InsertionSort {
     }
 
     public static void main(String[] args) {
+        int[] a2 = null;
+        insertionSort(a2);
         int[] a1 = {8, 2, 3, 1, 6, 4, 5, 7};
         insertionSort(a1);
         for (int a : a1) {

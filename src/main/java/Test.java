@@ -1,7 +1,7 @@
 
 
 
-import com.sun.org.apache.xml.internal.security.utils.Base64;
+//import com.sun.org.apache.xml.internal.security.utils.Base64;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
@@ -60,8 +60,8 @@ public class Test {
         SecretKey secretKey = keyFactory.generateSecret(desKey);
         Cipher cipher = Cipher.getInstance("DES");
         cipher.init(Cipher.DECRYPT_MODE, secretKey, random);
-        byte[] b = cipher.doFinal(Base64.decode(new String(src)));
-        return new String(b, "utf-8");
+//        byte[] b = cipher.doFinal(Base64.decode(new String(src)));
+        return new String("utf-8");
 
     }
 
